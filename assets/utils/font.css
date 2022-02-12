@@ -1,0 +1,21 @@
+:root {
+  --font: 'Inter', sans-serif;
+  --fs-6: .6rem;
+  --fs-7: .7rem;
+  --fs-8: .8rem;
+  --fs-9: .9rem;
+  --fs-10: 1rem;
+  --fs-12: 1.2rem;
+  --fs-14: 1.4rem;
+  --fs-16: 1.6rem;
+  --fs-18: 1.8rem;
+  --fs-20: 2rem;
+  --fs-22: 2.2rem;
+  --fs-24: 2.4rem;
+  --fs-28: 2.8rem;
+  --fs-30: 3rem;
+  --normal-weight: 400;
+  --medium-weight: 500;
+  --bold-weight: 600;
+  --bolder-weight: 700;
+}
