@@ -70,7 +70,7 @@ export default {
       this.lastWords = []
       this.letterIndexes = []
       this.value = 0
-      this.timer = 3 * 60
+      this.timer = 2 * 60
       this.step()
     },
     step() {
