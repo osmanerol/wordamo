@@ -65,6 +65,8 @@ export default {
       }
     },
     gameStart() {
+      this.showError = false
+      this.showCorrect = false
       this.findWordSource()
       this.setGameStarted(true)
       this.lastWords = []
@@ -112,7 +114,7 @@ export default {
       this.$confetti.stop()
     },
     countdownEnd() {
-      if(this.value != 10) {
+      if(this.value !== 10) {
         this.$bvModal.show('time-over-modal')
       }
     },
@@ -127,6 +129,8 @@ export default {
           this.letterIndexes = []
           if(this.value === this.max) {
             this.startConfetti()
+            this.timer = 0
+            this.$refs.countdown.reCountdown()
           }
           else {
             this.step()
@@ -302,7 +306,7 @@ export default {
     color: var(--white-color);
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 6px;
     .keyboard-row {
       display: flex;
       gap: 4px;
