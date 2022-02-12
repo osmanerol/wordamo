@@ -112,7 +112,9 @@ export default {
       this.$confetti.stop()
     },
     countdownEnd() {
-      this.$bvModal.show('time-over-modal')
+      if(this.value != 10) {
+        this.$bvModal.show('time-over-modal')
+      }
     },
     type(letter) {
       this.showError = false
