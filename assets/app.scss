@@ -1,9 +1,16 @@
 html {
-  font-size: 16px;
+  height: 100%;
   overflow: hidden;
   body {
+    height: 100%;
     font-family: var(--font);
     background-color: var(--primary-ui-color);
+    #__nuxt {
+      height: 100%;
+      #__layout {
+        height: 100%;
+      }
+    }
   }
 }
 
