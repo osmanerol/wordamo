@@ -316,10 +316,6 @@ export default {
         font-weight: var(--bold-weight);
         cursor: pointer;
         transition: .2s all;
-        &:hover {
-          background-color: var(--dark-blue-color);
-          transform: scale(1.08);
-        }
       }
       .large {
         flex: 2;
