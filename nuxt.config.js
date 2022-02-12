@@ -12,9 +12,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
       { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og-type', property: 'og:type', content: 'website' },
+      { hid: 'og-title', property: 'og:title', content: 'Wordamo | Find 10 words' },
+      { hid: 'og-desc', property: 'og:description', content: 'Try to find the 5-letter words that will appear in 3 minutes by using the clues.' },
+      { hid: 'og-image', property: 'og:image', content: 'https://wordamo.vercel.app/favicon.png' },
+      { hid: 'og-url', property: 'og:url', content: 'https://wordamo.vercel.app' },
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/png', href: '/favicon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap' }
     ],
   },

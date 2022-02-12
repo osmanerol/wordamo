@@ -123,7 +123,7 @@ export default {
           this.value += 1
           this.showCorrect = true
           this.letterIndexes = []
-          if(this.value === 10) {
+          if(this.value === this.max) {
             this.startConfetti()
           }
           else {
@@ -193,7 +193,6 @@ export default {
           :value="value" 
           :max="max" 
           variant="success"
-          animated
         />
         <div class="game-boxes">
           <span 
